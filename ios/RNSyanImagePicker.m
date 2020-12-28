@@ -224,7 +224,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
     imagePickerVc.maxImagesCount = imageCount;
     imagePickerVc.allowPickingGif = isGif; // 允许GIF
     imagePickerVc.allowTakePicture = isCamera; // 允许用户在内部拍照
-    imagePickerVc.allowPickingVideo = NO; // 不允许视频
+    imagePickerVc.allowPickingVideo = YES; // 不允许视频
     imagePickerVc.showSelectedIndex = showSelectedIndex;
     imagePickerVc.allowPickingOriginalPhoto = allowPickingOriginalPhoto; // 允许原图
     imagePickerVc.sortAscendingByModificationDate = sortAscendingByModificationDate;
